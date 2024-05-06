@@ -1,0 +1,18 @@
+using System;
+
+class MainClass
+{
+    public static void Main(string[] args)
+    {
+        int i = 1;
+        while (true)
+        {
+            Console.WriteLine(i);
+            i++;
+
+            if (i > 10)
+                break;
+        }
+    }
+}
+
