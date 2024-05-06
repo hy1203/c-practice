@@ -1,0 +1,21 @@
+using System;
+using System.Collections;
+
+public class MainClass
+{
+    public static void Main(string[] args)
+    {
+        Stack st = new Stack(); //마지막에 입력된것이 먼저 나옴
+
+        //Push 메소드를 통해 stack에 아이템 추가
+        st.Push(1);
+        st.Push(2);
+        st.Push(3);
+
+        //Pop메소드를 통해 아이템 제거
+        while(st.Count > 0)
+        {
+            Console.WriteLine(st.Pop());
+        }
+    }
+}
