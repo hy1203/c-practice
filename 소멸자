@@ -1,0 +1,25 @@
+using System;
+
+
+class Cat
+{
+    public string Name;
+
+    public Cat(string name)
+    {
+        Name = name;
+        Console.WriteLine("고양이의 이름은 " + Name + "입니다.");
+    }
+    ~Cat() {
+        Console.WriteLine(Name + "이(가) 사라집니다.");
+    }
+}
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Cat myCat = new Cat("코코");
+        Cat myCat2 = new Cat("몰리"); //소멸자는 임의로 사라지는것 순서가 있는건 아님
+    }
+}
