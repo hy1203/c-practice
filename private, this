@@ -1,0 +1,24 @@
+using System;
+
+class Cat
+{
+    private string name;
+
+    public void SetName(string name)
+    {
+        this.name = name;
+    }
+    public string GetName()
+    {
+        return this.name;
+    }
+}
+
+class Program {
+    public static void Main(string[] args)
+    {
+        Cat myCat = new Cat();
+        myCat.SetName("몰리");
+        Console.WriteLine("고양이의 이름은 "+myCat.GetName()+"입니다.");
+    }
+}
