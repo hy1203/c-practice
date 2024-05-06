@@ -1,0 +1,31 @@
+using System;
+
+class MainClass
+{
+    public static void Main(string[] args)
+    {
+        //배열을 초기화하는 첫 번째 방법
+        int[] array1 = new int[3];
+        array1[0] = 10;
+        array1[1] = 20;
+        array1[2] = 30;
+        Console.WriteLine(array1); //array자체가 출력
+        //두 번째 방법
+        int[] array2 = new int[] { 1, 2, 3 };
+        //세 번째 방법
+        int[] array3 = { 4, 5, 6 };
+
+        for(int i=0; i<3; i++) //값 출력
+        {
+            Console.WriteLine(array2[i]);
+        }
+        //배열 길이
+        Console.WriteLine(array3.Length);
+
+        //foreach문을 통해 배열에 담긴 값 출력
+        foreach(int j in array3)
+        {
+            Console.WriteLine(j);
+        }
+    }
+}
