@@ -1,0 +1,27 @@
+using System;
+
+
+//예외 처리하기 : 정상적으로 처리되지 않고, 예상하지 못한 경과를 도출하는 것을 방지하는 기능
+//ex) 나눌 때 0으로 나누기, 배열에서 접근할 수 없는 인덱스 접근, 클래스를 인스턴스로 초기화하지 않고 사용 ...
+class MainClass
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("나눌 숫자를 입력하세요: ");
+        int divider = int.Parse(Console.ReadLine()); //문자열을 숫자로 바꿈
+
+        try
+        {
+            Console.WriteLine(10 / divider);
+        }
+        /**
+        catch
+        {
+            Console.WriteLine("0으로 나눌 수 없습니다.");
+        }**/
+        catch (Exception e)
+        {
+            Console.WriteLine("예외 : " + e.Message);
+        }
+    }
+}
