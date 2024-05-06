@@ -1,0 +1,14 @@
+using System;
+
+class MainClass
+{
+    public static void Main(string[] args)
+    {
+        int num = 0;
+        Console.WriteLine(num++);
+        Console.WriteLine(num);
+        Console.WriteLine(--num);
+        Console.WriteLine(num); //--,++가 앞에 오는것과 뒤에오는것에 값에 차이가 남
+    }
+}
+
