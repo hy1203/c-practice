@@ -1,0 +1,31 @@
+using System;
+
+//클래스의 시작
+class MainClass
+{
+    public static void Main(string[] args)
+    {
+        // 코드영역
+    }
+}
+// 클래스의 끝
+
+class Person {
+  //속성(Property)
+  public string Name;
+  public string Birthday;
+  public string Gender;
+
+  //메소드(Method)
+  public void Eat(){
+  //먹는 행위
+  }
+
+  public void Walk(){
+  //걷는 행위
+  }
+
+  public void Run(){
+  //뛰는 행위
+  }
+}
